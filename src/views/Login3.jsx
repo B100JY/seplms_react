@@ -8,8 +8,8 @@ import { getCookie, saveCookie } from "../utils/CookieUtils.js";
 const LoginForm = () => {
   const history = useNavigate();
   const [lgnId, setLgnId] = useState("");
-  const [pwd, setPwd] = useState("");
-  const [saveId, setSaveId] = useState(false);
+  //  const [pwd, setPwd] = useState("");
+  const [, setSaveId] = useState(false);
 
   useEffect(() => {
     const savedID = getCookie("EMP_ID");

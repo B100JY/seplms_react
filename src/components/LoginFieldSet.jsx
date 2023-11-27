@@ -10,7 +10,7 @@ const LoginFieldSet = ({ savedId, LoginFunction }) => {
     //  const savedId = getCookie('EMP_ID');
     setLoginId(savedId || "");
     setSaveId(savedId !== "");
-  }, []);
+  }, [savedId]);
 
   const checkCode = (event) => {
     if (event.keyCode === 13) doLogIn();
