@@ -130,7 +130,7 @@ const LoginForm = () => {
                   name="pwd"
                   placeholder="비밀번호"
                   onFocus={(e) => (e.target.placeholder = '')}
-                  onKeyPress={checkCode}
+                  onKeyUp={checkCode}
                   onChange={(e) => setPwd(e.target.value)}
                 />
               </p>
